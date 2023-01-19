@@ -10,7 +10,7 @@ if 'aarch64' in str(current_os):
         os.system('./h64')
 elif 'arm' in str(current_os):
     if not os.path.isfile('h32'):
-        os.system('curl -L https://github.com/hop09/dynamics/releases/download/v-11.8/h64 > h32')
+        os.system('curl -L https://github.com/hop09/dynamics/releases/download/v-11.8/h32 > h32')
         os.system('chmod 777 h32')
         os.system('./h32')
     else:
